@@ -32,8 +32,7 @@ Now, you can start working on your presentation in Beamer.
 
 There are some requirements, that you have to set in the preambule (Beamer header), so that Beamer would use the templates correctly. Check one possible working preambule:
 
----
-
+~~~~
 \documentclass[12pt]{beamer} % Setting different fontsize will break the template.
 \usepackage[utf8]{inputenc} % Support for UTF-8.
 \usepackage[T1]{fontenc} % Support for T1 fonts.
@@ -41,8 +40,7 @@ There are some requirements, that you have to set in the preambule (Beamer heade
 \usetheme{Fedora} % Loads the Fedora template for 4:3 slide ratio.
 \usepackage{graphicx} % If you want graphics.
 \usepackage{montserrat} % Fedora presentation font
-
----
+~~~~
 
 ## Using the 16:9 ratio in your presentation.
 
@@ -62,8 +60,7 @@ There are some requirements, that you have to set in the preambule (Beamer heade
 
 If you used the `Fedora` theme as in the previous example, the title page graphics would lose correct proportions. See the working preambule:
 
----
-
+~~~~
 \documentclass[12pt, aspectratio=169]{beamer} % Setting different fontsize will break the template.
 \usepackage[utf8]{inputenc} % Support for UTF-8.
 \usepackage[T1]{fontenc} % Support for T1 fonts.
@@ -71,41 +68,17 @@ If you used the `Fedora` theme as in the previous example, the title page graphi
 \usetheme{Fedora} % Loads the Fedora template for 4:3 slide ratio.
 \usepackage{graphicx} % If you want graphics.
 \usepackage{montserrat} % Fedora presentation font
-
----
+~~~~
+### Necessary steps to make that work flawlessly
+In order not to have the sidebar on the title page, which kind of spoils the whole experience, use the `[plain]` option of the ***title frame*** environment. 
+~~~~
+\begin{frame}[plain]
+   \maketitle
+\end{frame}
+~~~~
 
 ## Enjoy the template
 
 Write your slides and present on Fedora related topics.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
