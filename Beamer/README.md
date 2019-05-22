@@ -65,7 +65,7 @@ If you used the `Fedora` theme as in the previous example, the title page graphi
 \usepackage[utf8]{inputenc} % Support for UTF-8.
 \usepackage[T1]{fontenc} % Support for T1 fonts.
 \usepackage{lmodern} % Using modern fonts metrics
-\usetheme{Fedora} % Loads the Fedora template for 4:3 slide ratio.
+\usetheme{Fedora169} % Loads the Fedora template for 16:9 slide ratio.
 \usepackage{graphicx} % If you want graphics.
 \usepackage{montserrat} % Fedora presentation font
 ~~~~
