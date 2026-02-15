@@ -1,3 +1,4 @@
+# ⚠️ **We are in the process of moving this and other repositories onto a different platform, the proper link will be posted soon**
 # fedora-presentation-template
 Presentation templates with Fedora branding for slide decks / presentations
 
