@@ -1,0 +1,38 @@
+% Copyright 2007 by Till Tantau
+% Copyright 2015 by Vedran Mileti\'c, Joseph Wright
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\newif\ifbeamer@sidebartab
+\newif\ifbeamer@sidebardark
+
+\beamer@sidebartabfalse
+\beamer@sidebardarkfalse
+
+\PassOptionsToPackage{width=2cm}{beamerouterthemesidebar}
+
+\DeclareOptionBeamer{width}{\PassOptionsToPackage{width=#1}{beamerouterthemesidebar}}
+
+\ProcessOptionsBeamer
+
+\mode<presentation>
+\RequirePackage{tikz}
+\useinnertheme{Fedora}
+\useoutertheme[right,height=0pt]{Fedora}
+
+\usecolortheme{Fedora}  
+\usebeamercolor{sidebar}
+\setbeamertemplate{sidebar canvas right}[vertical shading][top=bgblue,bottom=bgaqua]
+
+\ifbeamer@sidebartab
+  \usecolortheme{Fedora}
+\fi
+
+\mode
+<all>
+

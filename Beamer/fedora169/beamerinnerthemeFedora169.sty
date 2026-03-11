@@ -1,0 +1,40 @@
+\mode<presentation>
+
+\setbeamertemplate{background}{
+ % \begin{tikzpicture}
+ %   \ifnum\thepage=1\relax%
+ %         \draw (0,0) node [rectangle, left color=bgblue, right color=bgblue!10!bgaqua, anchor=north, minimum width=\paperwidth, minimum height=\paperheight, shading=axis, shading angle=0] {};
+ %   \fi
+ % \end{tikzpicture}
+ \ifnum\thepage=1\relax%
+ \includegraphics[width=\paperwidth,height=\paperheight]{titlepage169.png}
+ \fi
+
+}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded]
+
+
+
+% Title page
+\defbeamertemplate*{title page}{Fedora}[1][]
+{ 
+    \vskip2cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=1cm,sep=8pt,#1]{title page header}
+            \usebeamerfont{title}{\bf \inserttitle\par}%
+      \vskip0.3cm%      
+      \usebeamerfont{subtitle}\insertsubtitle\par%
+    \end{beamercolorbox}%
+    \vskip0.3cm%
+    \begin{beamercolorbox}[wd=12cm,leftskip=8cm,#1]{docinfo}
+      \usebeamerfont{author}\insertauthor%
+      \vskip0.2cm%
+      \insertinstitute%
+      \vskip0.4cm%
+      \insertdate%
+    \end{beamercolorbox}
+  \vfill
+}
+
+\mode
+<all>
